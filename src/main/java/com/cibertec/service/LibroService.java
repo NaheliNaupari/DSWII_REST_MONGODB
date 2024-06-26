@@ -11,6 +11,5 @@ public interface LibroService {
 
 	public abstract List<Libro> listaLibrosPorCategoria(String categories);
     
-
-
+    public abstract List<Libro> listaLibrosPorCategorias(List<String> categories);
 }

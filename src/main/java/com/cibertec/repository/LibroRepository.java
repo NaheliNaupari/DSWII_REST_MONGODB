@@ -12,7 +12,8 @@ public interface LibroRepository extends MongoRepository<Libro, String> {
     @Query("{ 'categories' : { $regex: ?0, $options: 'i' } }")
     public abstract List<Libro> listaLibrosPorCategoria(String categories);
 
-
+    @Query("{ 'categories' : { $in: ?0 } }")
+    public abstract List<Libro> listaLibrosPorCategorias(List<String> categories);
 }
 
 

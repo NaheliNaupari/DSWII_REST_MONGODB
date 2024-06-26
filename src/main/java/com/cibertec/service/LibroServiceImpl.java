@@ -23,6 +23,11 @@ public class LibroServiceImpl implements LibroService {
         return repository.listaLibrosPorCategoria(categories);
     }
 
+    @Override
+    public List<Libro> listaLibrosPorCategorias(List<String> categories) {
+        return repository.listaLibrosPorCategorias(categories);
+    }
+
 }
 
 
